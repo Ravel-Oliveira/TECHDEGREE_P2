@@ -46,6 +46,8 @@ a, a:visited, a:hover, a:active {
     color: inherit;
 }
 
+/* Here begins the header style */
+
 .nav-menu li {
     display: flex;
     justify-content: center;
@@ -54,19 +56,22 @@ a, a:visited, a:hover, a:active {
     flex-basis: auto;
     height: 2rem;
     margin: 0.5rem 0;
-    background-color: var(--orange);
+    background-color: var(--dark-blue);
     font-family: 'Roboto', sans-serif;
     color: var(--white);
     transition: background-color 0.3s ease;
 }
 
 li:hover {
-    background-color: var(--light-orange);
+    background-color: var(--blue);
 }
 
 .profile-wrapper {
+    margin-bottom: 3rem;
+    padding-bottom: 0.1rem;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    margin-bottom: 2rem; 
 }
 
 .image-wrapper {
@@ -80,21 +85,27 @@ li:hover {
 }
 
 .profile-wrapper img {
-    min-height: 80px;
-    min-width: 80px;
+    max-height: 100px;
+    max-width: 100px;
     border-radius: 50%; 
     margin: 20px 0px;
     object-fit: cover;
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75)
 }
 
+/* Here begins the portfolio section Style */
+
 section {
     display: flex;
     width: 100vw;
-    padding: 0 0.6rem 2rem;
+    padding: 1.5rem 0.6rem;
     flex-direction: column;
     justify-content: center;
     background-color: var(--white);
+}
+
+.portfolio-section {
+    border-bottom: solid 1px rgb(58, 92, 107, 0.3);
 }
 
 .project {
@@ -108,9 +119,39 @@ section {
     object-fit: contain;
 }
 
-/* .project p:last-child {
-    margin-bottom: 0rem;
-} */
+/* Here begins the skills section Style
+I got the code idea for this section at W3 school and modified the content to fit my taste */
+
+.skills-bar {
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.skills {
+    text-align: right;
+    padding: 10px 5px;
+    color: var(--white);
+}
+
+.skills-section p {
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.illu, .photo, .after, .html, .css {
+    background-color: var(--light-orange);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.illu {width: 90%;}
+.photo {width: 70%;}
+.after {width: 55%;}
+.html {width: 80%;}
+.css {width: 35%;}
+
+/* Here begins the footer CSS Style */
 
 footer {
     margin-top: 2rem;
@@ -140,7 +181,3 @@ footer p {
 .footer-nav h3 {
     font-size: 0.9rem;
 }
-
-/* .footer-nav a{
-    text-decoration: none;
-} */
