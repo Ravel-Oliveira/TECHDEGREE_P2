@@ -208,6 +208,7 @@ footer p {
         text-align: left;
         flex-wrap: wrap;
         gap: 1.5rem;
+        margin-top: 2rem;
     }
 
     .profile-wrapper p {
@@ -224,6 +225,21 @@ footer p {
         margin: 0;
         flex: 1 4;
         order: 2;
+    }
+
+/* portfolio style css */
+
+    .project-wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 320px;
     }
 
 }
