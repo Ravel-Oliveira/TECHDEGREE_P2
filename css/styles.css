@@ -199,6 +199,10 @@ footer p {
 
 /* header style css */
 
+    header {
+        padding: 0 1rem;
+    }
+
     .nav-menu {
         display: flex;
         justify-content: center;
@@ -234,6 +238,7 @@ footer p {
         margin: 0;
         flex: 1 4;
         order: 2;
+        max-width: 400px;
     }
 
 /* portfolio style css */
@@ -275,5 +280,59 @@ footer p {
 
 @media screen and (min-width: 1024px) {
 
+/* header style css */
+
+    header {
+        width: calc(100vw - 2rem);
+        max-width: 1100px;
+        margin: 0 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .menu-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-wrapper img {
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+/* portfolio style css */
+
+    section {
+        width: calc(100vw - 2rem);
+        max-width: 1100px;
+        margin: 0 2rem;
+    }
+
+    .project {
+        flex: 1 0 300px;
+        padding: 0 1rem;
+    }
+
+/* skills style css */
+
+    .skills-wrapper {
+        padding: 0 1rem;
+    }
+
+/* footer style css */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: calc(100vw - 2rem);
+        max-width: 1100px;
+        padding: 0 1rem;
+        margin: 0 2rem;
+    }
 
 }
